@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предварительный просмотр иконок GymBro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .icon-item {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .icon-item:hover {
+            transform: translateY(-5px);
+            border-color: #8b5cf6;
+        }
+        .icon-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+        }
+        .icon-item h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+        .icon-item p {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .instructions h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .instructions ol {
+            color: #555;
+            line-height: 1.6;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px 5px;
+            transition: transform 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Иконки для GymBro</h1>
+        
+        <div class="icon-grid">
+            <div class="icon-item">
+                <img src="icon.svg" alt="Гантель">
+                <h3>Гантель</h3>
+                <p>Детальная иконка с гантелью</p>
+                <a href="icon.svg" download class="download-btn">Скачать SVG</a>
+            </div>
+            
+            <div class="icon-item">
+                <img src="icon-simple.svg" alt="Весы">
+                <h3>Весы</h3>
+                <p>Простая иконка с весами</p>
+                <a href="icon-simple.svg" download class="download-btn">Скачать SVG</a>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h2>📋 Как создать PNG иконки:</h2>
+            <ol>
+                <li><strong>Выберите иконку:</strong> Решите, какая вам больше нравится</li>
+                <li><strong>Конвертируйте в PNG:</strong> Используйте онлайн конвертер:
+                    <ul>
+                        <li><a href="https://convertio.co/svg-png/" target="_blank">Convertio</a></li>
+                        <li><a href="https://cloudconvert.com/svg-to-png" target="_blank">CloudConvert</a></li>
+                        <li><a href="https://favicon.io/favicon-converter/" target="_blank">Favicon.io</a></li>
+                    </ul>
+                </li>
+                <li><strong>Создайте два размера:</strong>
+                    <ul>
+                        <li>192x192 пикселей → сохраните как <code>icon-192.png</code></li>
+                        <li>512x512 пикселей → сохраните как <code>icon-512.png</code></li>
+                    </ul>
+                </li>
+                <li><strong>Поместите в папку:</strong> Сохраните PNG файлы в папку <code>public/</code></li>
+            </ol>
+            
+            <h3>🎨 Рекомендации:</h3>
+            <ul>
+                <li>Используйте фиолетовый фон (#8b5cf6)</li>
+                <li>Белые элементы для контраста</li>
+                <li>Плоский дизайн без теней</li>
+                <li>Квадратный формат</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
